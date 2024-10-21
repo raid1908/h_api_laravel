@@ -13,6 +13,8 @@
 
 ## php artisan key:generate
 
+## mysql server req
+
 ## .env database credentials
 
 ## php artisan migrate
