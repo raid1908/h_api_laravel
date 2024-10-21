@@ -11,6 +11,8 @@
 
 ## php artisan serve
 
+## php artisan key:generate
+
 ## .env database credentials
 
 ## php artisan migrate
