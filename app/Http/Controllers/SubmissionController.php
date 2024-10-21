@@ -10,7 +10,7 @@ use Illuminate\Validation\ValidationException;
 
 class SubmissionController extends Controller
 {
-    public function store(Request $request)
+    public function storeData(Request $request): \Illuminate\Http\JsonResponse
     {
         Log::info('Rozpoczynam walidację danych');
 
