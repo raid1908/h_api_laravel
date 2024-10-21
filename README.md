@@ -7,6 +7,27 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## http://localhost:8000/api/submissions
+
+## php artisan serve
+
+## .env database credentials
+
+## php artisan migrate
+
+## Postman body form-type
+first_name:xxx<br>
+last_name:xxx<br>
+phone:123-456-789<br>
+email:test@example.pl<br>
+receipt_number:123456<br>
+purchase_date:22-06-2024<br>
+receipt_image: (as file type),<br>
+accept_terms:1<br>
+accept_marketing:0<br>
+##
+
+##ShortesArray in array.php
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
