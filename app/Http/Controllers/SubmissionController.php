@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 
+
 class SubmissionController extends Controller
 {
     public function storeData(Request $request): \Illuminate\Http\JsonResponse
@@ -29,7 +30,7 @@ class SubmissionController extends Controller
             Log::info('Dane przeszły walidację', ['validated_data' => $validated]);
         } catch (ValidationException $e) {
             Log::error('Walidacja nie powiodła się', ['errors' => $e->errors()]);
-            return response()->json($e->errors(), 422);
+            return $this->response()->json($e->errors(), 422);
         }
 
         // Konwersja daty na format MySQL (YYYY-MM-DD)
@@ -55,6 +56,7 @@ class SubmissionController extends Controller
 
         return response()->json(['message' => 'Zgłoszenie zostało przyjęte!'], 201);
     }
+
 
 
 }
